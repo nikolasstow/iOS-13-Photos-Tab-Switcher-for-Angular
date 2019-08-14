@@ -1,0 +1,23 @@
+:host {
+    flex: 1 1 auto;
+    text-align: center;
+    color: rgba(0,0,0,0.4);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+    z-index: 3;
+    transition: 0.3s;
+}
+
+:host.selected {
+    color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+    :host {
+        color: rgba(255,255,255,0.45);
+    }
+    :host.selected {
+        color: rgba(255,255,255,0.8);
+    }
+}

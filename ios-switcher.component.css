@@ -1,0 +1,28 @@
+:host {
+    display: flex;
+    position: fixed;
+    bottom: 10px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(200,200,200,0.5);
+    border-radius: 20px;
+    padding: 3px;
+    z-index: 1;
+}
+
+.tab {
+    background-color: rgba(50,50,50,0.35);
+    position: absolute;
+    z-index: 2;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+@media (prefers-color-scheme: dark) {
+    :host {
+        background-color: rgba(70,70,70,0.5);
+    }
+    .tab {
+        background-color: rgba(150,150,150,0.45);
+    }
+}
